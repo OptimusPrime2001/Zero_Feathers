@@ -9,13 +9,13 @@ const httpsOptions = {
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    httpsOptions,
+    // httpsOptions,
   });
   await app.init();
   app.enableCors({
-    origin: 'https://localhost:3000', // Domain của Next.js (ở local)
+    origin: 'https://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Nếu cần gửi cookie hoặc header Authorization
+    credentials: true,
   });
   await app.listen(process.env.PORT || 3000);
   // const configService = app.get(ConfigService);
