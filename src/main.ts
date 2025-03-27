@@ -12,6 +12,11 @@ async function bootstrap() {
     httpsOptions,
   });
   await app.init();
+  app.enableCors({
+    origin: 'https://localhost:3000', // Domain của Next.js (ở local)
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Nếu cần gửi cookie hoặc header Authorization
+  });
   await app.listen(process.env.PORT || 3000);
   // const configService = app.get(ConfigService);
   // await app.listen(configService.get('PORT') as number);
