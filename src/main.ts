@@ -3,8 +3,8 @@ import { AppModule } from './app.module';
 import * as fs from 'fs';
 
 const httpsOptions = {
-  key: fs.readFileSync('./secrets/dainel_le-key.pem'),
-  cert: fs.readFileSync('./secrets/dainel_le.pem'),
+  key: fs.readFileSync('./src/cert/key.pem'),
+  cert: fs.readFileSync('./src/cert/cert.pem'),
 };
 
 async function bootstrap() {
@@ -13,9 +13,9 @@ async function bootstrap() {
   });
   await app.init();
   app.enableCors({
-    origin: 'https://localhost:3000', // Domain của Next.js (ở local)
+    origin: 'https://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Nếu cần gửi cookie hoặc header Authorization
+    credentials: true,
   });
   await app.listen(process.env.PORT || 3000);
   // const configService = app.get(ConfigService);
