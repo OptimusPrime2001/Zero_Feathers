@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "ES6",
+    "moduleResolution": "node",
+    "lib": ["es2023", "dom"],
+    "types": ["node"],
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
