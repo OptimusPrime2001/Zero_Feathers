@@ -97,5 +97,3 @@ npm run prod
 
 Các script này rất hữu ích để tự động hóa các tác vụ trong quy trình phát triển của bạn.
 
-## Kết luận
-
