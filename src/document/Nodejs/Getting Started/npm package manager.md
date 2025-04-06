@@ -99,7 +99,3 @@ Các script này rất hữu ích để tự động hóa các tác vụ trong q
 
 ## Kết luận
 
-Đây là một giới thiệu ngắn gọn về npm. Để tìm hiểu chi tiết hơn, hãy xem tài liệu chính thức của npm tại đây: [Tài liệu npm](https://docs.npmjs.com/).
-
-npm là một công cụ không thể thiếu trong hệ sinh thái Node.js, giúp đơn giản hóa việc quản lý phụ thuộc và tự động hóa quy trình phát triển. Hãy bắt đầu khám phá npm ngay hôm nay!
-
