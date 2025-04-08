@@ -42,4 +42,5 @@ JavaScript được V8 biên dịch nội bộ bằng kỹ thuật **biên dịc
 Các ứng dụng của chúng ta giờ đây có thể chạy hàng giờ trong trình duyệt, thay vì chỉ là vài quy tắc xác thực biểu mẫu hoặc các đoạn mã đơn giản.
 
 Trong thế giới mới này, việc biên dịch JavaScript là hoàn toàn hợp lý, bởi mặc dù có thể mất thêm một chút thời gian để chuẩn bị mã JavaScript, nhưng một khi hoàn tất, nó sẽ hoạt động hiệu quả hơn rất nhiều so với mã chỉ được thông dịch thuần túy.
+tài liệu ok
 
